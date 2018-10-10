@@ -29,7 +29,6 @@ class Owner
   end
   
   def buy_fish
-    self.pets[:fishes] = Array.new
     self.pets[:fishes] << Fish.new 
   end
   
