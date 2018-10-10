@@ -30,7 +30,7 @@ class Owner
   
   def buy_fish
     self.pets[:fishes] = Array.new
-    Array << Fish.new 
+    self.pets[:fishes] << Fish.new 
   end
   
   
