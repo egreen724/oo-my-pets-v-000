@@ -51,16 +51,25 @@ class Owner
   end
   
   def feed_fish
-    self.pets[:fish].each do |fish|
+    self.pets[:fishes].each do |fish|
       fish.mood = "happy"
     end
   end
   
   def sell_pets
-    @pets.clear 
   
-  self.pets[:fish].each do |fish|
+  self.pets[:fishes].each do |fish|
       fish.mood = "nervous"
     end
+    
+    self.pets[:cats].each do |cat|
+      cat.mood = "nervous"
+    end
+    
+    self.pets[:dogs].each do |dog|
+     dog.mood = "nervous"
+   end
+   
+   @pets.clear 
   
 end
